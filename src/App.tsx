@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 // import Contact from './pages/Contact';
 // import Login from './pages/Login';
-import Products from './pages/products';
+// import Products from './pages/products';
 import Networking from './pages/Networking';
 // import Computer-Parts from './pages/Computer- Parts';
 // import Register from './pages/Register';
@@ -28,10 +28,10 @@ function App() {
       element: <Home />
     },
     
-    {
-      path: '/products',
-      element: <Products />
-    },
+    // {
+    //   path: '/products',
+    //   element: <Products />
+    // },
     // {
     //   path: '/products/:id',
     //   element: <ProductDetails />
