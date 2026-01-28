@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Phone, MapPin, Mail, MessageCircle, ShoppingBag, Camera, Zap, Clock } from 'lucide-react';
 import Navbar from '../components/Navbar'; // Adjust path based on your project structure
 

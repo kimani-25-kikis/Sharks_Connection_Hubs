@@ -4,7 +4,7 @@ import About from './pages/About';
 import ContactPage from './pages/ContactPage';
 // import Login from './pages/Login';
 import ComputerCables from './pages/computerCables';
-import Accessories from './pages/accessories';
+import Accessories from './pages/Accessories';
 import ElectricalElectronics from './pages/ElectricalElectronics';
 import  CCTVCameras from './pages/CCTVCameras';
 // import ProductDetails from './pages/ProductDetails';
