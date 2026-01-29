@@ -329,7 +329,7 @@ const AnimatedCard: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 };
 
 // Feature component without animation
-const Feature: React.FC<{ icon: string; text: string; color: string }> = ({ icon, text, color }) => {
+const Feature: React.FC<{ icon: string; text: string }> = ({ icon, text }) => {
   return (
     <div className="p-4 rounded-2xl bg-white shadow-lg border border-gray-100">
       <div className="text-4xl mb-3">
@@ -478,10 +478,10 @@ const CCTVCameras: React.FC = () => {
         {/* Security features */}
         <div className="relative container mx-auto px-4 -mt-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <Feature icon="🌙" text="Night Vision" color="bg-blue-500/20" />
-            <Feature icon="🌧️" text="Weatherproof" color="bg-blue-500/20" />
-            <Feature icon="🤖" text="AI Detection" color="bg-blue-500/20" />
-            <Feature icon="📱" text="Mobile Access" color="bg-blue-500/20" />
+            <Feature icon="🌙" text="Night Vision" />
+            <Feature icon="🌧️" text="Weatherproof" />
+            <Feature icon="🤖" text="AI Detection" />
+            <Feature icon="📱" text="Mobile Access" />
           </div>
         </div>
       </section>
@@ -584,7 +584,7 @@ const CCTVCameras: React.FC = () => {
         {/* Products Grid */}
         {sortedProducts.length > 0 ? (
           <div className={`grid gap-8 ${gridView ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' : 'grid-cols-1'}`}>
-            {sortedProducts.map((product, index) => (
+            {sortedProducts.map((product, __index) => (
               <AnimatedCard key={product.id}>
                 <div className={`group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl ${
                   !gridView ? 'flex' : ''

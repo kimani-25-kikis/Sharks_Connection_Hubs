@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logoImage from "../assets/myphoto..jpeg"; // Corrected import path
+const logoImage = "/logo.jpeg"; // Corrected import path
 
 const Navbar: React.FC = () => {
   const location = useLocation();
